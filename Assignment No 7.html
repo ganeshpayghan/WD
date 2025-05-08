@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colorful Video Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .frame-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 20px;
+    }
+
+    iframe {
+      width: 500px;
+      height: 300px;
+      border: 5px solid white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    iframe:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:white; margin-top: 30px; font-size: 2.5rem;">Travel Enthusiasts</h1>
+
+  <div class="frame-container">
+    <!-- Eiffel Tower Tour -->
+    <iframe src="https://www.youtube.com/embed/Scxs7L0vhZ4" allowfullscreen title="Paris Eiffel Tower Tour"></iframe>
+
+    <!-- Burj Khalifa Tour -->
+    <iframe src="https://www.youtube.com/embed/lflCmjW7RlI" allowfullscreen title="Burj Khalifa Dubai Tour"></iframe>
+  </div>
+</body>
+</html>

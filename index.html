@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Assignments</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #fff;
+        text-align: center;
+        animation: backgroundShift 20s infinite alternate;
+      }
+
+      @keyframes backgroundShift {
+        0% {
+          background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        100% {
+          background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+      }
+
+      main h2,
+      p {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      nav {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      a {
+        display: block;
+        margin: 10px;
+        padding: 15px 20px;
+        width: 60%;
+        background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+        opacity: 0;
+        animation: fadeIn 0.6s ease-in forwards;
+      }
+
+      a:nth-child(odd) {
+        animation-delay: 0.2s;
+      }
+      a:nth-child(even) {
+        animation-delay: 0.4s;
+      }
+
+      a:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #2575fc, #6a11cb);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      footer {
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #111;
+        font-size: 0.9em;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WEB DEVELOPMENT ASSIGNMENTS</h1>
+    </header>
+
+    <main>
+      <h2>NAME: GANESH BALIRAM PAYGHAN</h2>
+      <h2>ROLL NO: 29</h2>
+
+      <nav>
+        <a href="Assignment No 1.html" target="_blank">Assignment 1</a>
+        <a href="Assignment No 2.html" target="_blank">Assignment 2</a>
+        <a href="Assignment No 3.html" target="_blank">Assignment 3</a>
+        <a href="Assignment No 4.html" target="_blank">Assignment 4</a>
+        <a href="Assignment No 5.html" target="_blank">Assignment 5</a>
+        <a href="Assignment No 6.html" target="_blank">Assignment 6</a>
+        <a href="Assignment No 7.html" target="_blank">Assignment 7</a>
+        <a href="Assignment No 8.html" target="_blank">Assignment 8</a>
+        <a href="Assignment No 9.html" target="_blank">Assignment 9</a>
+        <a href="Assignment No 10.html" target="_blank">Assignment 10</a>
+        <a href="Assignment11.xml" target="_blank">Assignment 11</a>
+        <a href="Assg_12_output.htm" target="_blank">Assignment 12</a>
+        <a href="Assg_13_output.htm" target="_blank">Assignment 13</a>
+        <a href="MiniProject.html" target="_blank">MiniProject</a>
+       
+        
+      </nav>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ganesh</p>
+    </footer>
+  </body>
+</html>

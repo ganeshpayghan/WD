@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indian Army Tribute</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #0b3d91;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Indian_Army_Marching.jpg/1280px-Indian_Army_Marching.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
+
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .content h3 {
+      color: #0b3d91;
+      font-size: 1.8rem;
+    }
+
+    .quote-box {
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border-left: 5px solid #0b3d91;
+      background: #eaf0fa;
+      max-width: 600px;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0b3d91;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Indian Army</h1>
+    <p>“Service Before Self”</p>
+  </header>
+
+  <div class="hero">
+    <h2>Saluting Our Heroes</h2>
+  </div>
+
+  <div class="content">
+    <h3>About the Indian Army</h3>
+    <p>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces. 
+    It is a symbol of bravery, selfless service, and patriotism.</p>
+
+    <div class="quote-box" id="quoteBox">
+      “Either I will come back after hoisting the Tricolor, or I will come back wrapped in it.”
+    </div>
+
+    <button onclick="showNextQuote()">Next Quote</button>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Tribute Page | Jai Hind 🇮🇳
+  </div>
+
+  <script>
+    const quotes = [
+      "“Either I will come back after hoisting the Tricolor, or I will come back wrapped in it.” – Captain Vikram Batra",
+      "“What is a lifetime adventure for you is a daily routine for us.” – Indian Army",
+      "“Sleep peacefully at your homes. Indian Army is guarding the frontiers.”",
+      "“Born to fight, trained to kill, prepared to die, but never will.”",
+      "“We live by chance, we love by choice, we kill by profession.”"
+    ];
+
+    let index = 0;
+
+    function showNextQuote() {
+      index = (index + 1) % quotes.length;
+      document.getElementById("quoteBox").innerText = quotes[index];
+    }
+  </script>
+
+</body>
+</html>
